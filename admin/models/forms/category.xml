@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Category Details">
+
+		<field name="id" type="hidden" />
+
+		<field name="title" 
+				type="text" 
+				label="COM_SHOP_PRODUCTS_CATEGORY"
+				description="Title of category"
+				size="40"
+				class="inputbox"
+				required="true"
+				default="" />
+
+		<field name="alias"
+			   type="text"
+			   label="COM_SHOP_ALIAS_TITLE"
+			   description="Alias"
+			   size="40"
+			   class="inputbox"
+			   default="" />
+
+		<field name="description"
+			   type="textarea"
+			   label="Описание категории"
+			   description="Укажите описание категории"
+			   default="" />
+
+		<field name="image"
+			   type="media"
+			   label="Фото (1920 х 460 px)"
+			   description="Фотография категории"
+			   size="40"
+			   class="inputbox"
+			   default="" />
+
+		<field name="published"
+			   type="list"
+			   label="JSTATUS"
+			   description="JFIELD_PUBLISHED_DESC"
+			   class="chzn-color-state"
+			   filter="intval"
+			   size="1"
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8" ?>
+
+<form>
+	<fieldset name="details" label="Discount Details">
+
+		<field name="id" type="hidden" />
+
+		<field name="title" 
+				type="text" 
+				label="COM_SHOP_DISCOUNT_TITLE"
+				description="Укажите название скидки"
+				size="40"
+				class="inputbox"
+				required="true"
+				default="" />
+
+		<field name="value" 
+				type="text" 
+				label="Величина"
+				description="Укажите размер скидки в %"
+				size="40"
+				class="inputbox"
+				required="true"
+				default="" />
+
+		<field name="published" 
+			   type="list" 
+			   label="JSTATUS" 
+			   description="JFIELD_PUBLISHED_DESC" 
+			   class="chzn-color-state" 
+			   filter="intval" 
+			   size="1" 
+			   default="1">
+			<option value="1">JPUBLISHED</option>
+			<option value="0">JUNPUBLISHED</option>
+		</field>
+
+	</fieldset>
+</form>
